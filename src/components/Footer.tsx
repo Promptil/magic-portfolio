@@ -20,24 +20,21 @@ export const Footer = () => {
         paddingY="8"
         paddingX="16"
         gap="16"
-        horizontal="space-between"
+        horizontal="center"
         vertical="center"
+        mobileDirection="column"
       >
-        <Text variant="body-default-s" onBackground="neutral-strong">
-          <Text onBackground="neutral-weak">© {currentYear} /</Text>
-          <Text paddingX="4">{person.name}</Text>
-          <Text onBackground="neutral-weak">
-            {/* Usage of this template requires attribution. Please don't remove the link to Once UI. */}
-            / Build your portfolio with{" "}
-            <SmartLink
-              style={{ marginLeft: "-0.125rem" }}
-              href="https://once-ui.com/templates/magic-portfolio"
-            >
-              Once UI
-            </SmartLink>
+        <Flex horizontal="center">
+          <Text variant="body-default-s" onBackground="neutral-strong">
+            <Text onBackground="neutral-weak">© {currentYear} /</Text>
+            <Text paddingX="4">{person.name}</Text>
+            <Text onBackground="neutral-weak">
+              {/* Usage of this template requires attribution. Please don't remove the link to Once UI. */}
+              / All rights reserved
+            </Text>
           </Text>
-        </Text>
-        <Flex gap="16">
+        </Flex>
+        {/* <Flex gap="16" horizontal="center">
           {social.map(
             (item) =>
               item.link && (
@@ -51,7 +48,7 @@ export const Footer = () => {
                 />
               ),
           )}
-        </Flex>
+        </Flex> */}
       </Flex>
       <Flex height="80" show="s"></Flex>
     </Flex>

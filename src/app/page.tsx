@@ -84,20 +84,20 @@ export default function Home() {
               arrowIcon
             >
               <Flex gap="8" vertical="center">
-                {about.avatar.display && (
+                {/* {about.avatar.display && (
                   <Avatar
                     style={{ marginLeft: "-0.75rem", marginRight: "0.25rem" }}
                     src={person.avatar}
                     size="m"
                   />
-                )}
+                )} */}
                 {about.title}
               </Flex>
             </Button>
           </RevealFx>
         </Column>
       </Column>
-      <RevealFx translateY="16" delay={0.6}>
+      {/* <RevealFx translateY="16" delay={0.6}>
         <Projects range={[1, 1]} />
       </RevealFx>
       {routes["/blog"] && (
@@ -111,9 +111,9 @@ export default function Home() {
             <Posts range={[1, 2]} columns="2" />
           </Flex>
         </Flex>
-      )}
-      <Projects range={[2]} />
-      {newsletter.display && <Mailchimp newsletter={newsletter} />}
+      )} */}
+      {/* <Projects range={[2]} />
+      {newsletter.display && <Mailchimp newsletter={newsletter} />} */}
     </Column>
   );
 }

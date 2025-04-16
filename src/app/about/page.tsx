@@ -56,16 +56,16 @@ export default function About() {
       display: about.work.display,
       items: about.work.experiences.map((experience) => experience.company),
     },
-    {
-      title: about.studies.title,
-      display: about.studies.display,
-      items: about.studies.institutions.map((institution) => institution.name),
-    },
-    {
-      title: about.technical.title,
-      display: about.technical.display,
-      items: about.technical.skills.map((skill) => skill.title),
-    },
+    // {
+    //   title: about.studies.title,
+    //   display: about.studies.display,
+    //   items: about.studies.institutions.map((institution) => institution.name),
+    // },
+    // {
+    //   title: about.technical.title,
+    //   display: about.technical.display,
+    //   items: about.technical.skills.map((skill) => skill.title),
+    // },
   ];
   return (
     <Column maxWidth="m">
@@ -104,7 +104,7 @@ export default function About() {
         </Column>
       )}
       <Flex fillWidth mobileDirection="column" horizontal="center">
-        {about.avatar.display && (
+        {/* {about.avatar.display && (
           <Column
             className={styles.avatar}
             minWidth="160"
@@ -129,8 +129,8 @@ export default function About() {
               </Flex>
             )}
           </Column>
-        )}
-        <Column className={styles.blockAlign} flex={9} maxWidth={40}>
+        )} */}
+        <Column className={styles.blockAlign} flex={9} maxWidth={60}>
           <Column
             id={about.intro.title}
             fillWidth
@@ -173,7 +173,7 @@ export default function About() {
             >
               {person.role}
             </Text>
-            {social.length > 0 && (
+            {/* {social.length > 0 && (
               <Flex className={styles.blockAlign} paddingTop="20" paddingBottom="8" gap="8" wrap horizontal="center" fitWidth>
                 {social.map(
                   (item) =>
@@ -200,7 +200,7 @@ export default function About() {
                     ),
                 )}
               </Flex>
-            )}
+            )} */}
           </Column>
 
           {about.intro.display && (
@@ -221,9 +221,9 @@ export default function About() {
                       <Text id={experience.company} variant="heading-strong-l">
                         {experience.company}
                       </Text>
-                      <Text variant="heading-default-xs" onBackground="neutral-weak">
+                      {/* <Text variant="heading-default-xs" onBackground="neutral-weak">
                         {experience.timeframe}
-                      </Text>
+                      </Text> */}
                     </Flex>
                     <Text variant="body-default-s" onBackground="brand-weak" marginBottom="m">
                       {experience.role}
@@ -271,7 +271,7 @@ export default function About() {
             </>
           )}
 
-          {about.studies.display && (
+          {/* {about.studies.display && (
             <>
               <Heading as="h2" id={about.studies.title} variant="display-strong-s" marginBottom="m">
                 {about.studies.title}
@@ -338,7 +338,7 @@ export default function About() {
                 ))}
               </Column>
             </>
-          )}
+          )} */}
         </Column>
       </Flex>
     </Column>
